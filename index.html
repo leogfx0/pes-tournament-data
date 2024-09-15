@@ -454,6 +454,15 @@
         loadShopHistory();
     });
 </script>
+<script>
+  fetch('https://raw.githubusercontent.com/leogfx0/pes-tournament-data/main/tournamentData.json')
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+      // Use the data in your app
+    })
+    .catch(error => console.error('Error fetching data:', error));
+</script>
 
 </body>
 </html>
